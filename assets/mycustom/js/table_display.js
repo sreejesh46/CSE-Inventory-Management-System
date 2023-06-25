@@ -1,6 +1,6 @@
 var table_room =  $('.table_room').DataTable({
 			"fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
-                    if ( aData[0] == "FOSS LAB" )
+                    if ( aData[0] == "room 310" )
                     {
                         $('td', nRow).css('background-color', 'skyblue');
                     }

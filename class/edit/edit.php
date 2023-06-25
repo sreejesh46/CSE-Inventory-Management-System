@@ -525,14 +525,14 @@
 								$cont->execute(array(2,$id));
 								$controw = $cont->rowCount();
 								if($controw > 0){
-									echo "Succesfully return to Room 310 a";
+									echo "Succesfully return to room 310 a";
 								}
 							}else if($qty_transfer < $qty){
 								$cont = $conn->prepare('UPDATE item_transfer SET t_quantity = (t_quantity - ?) WHERE id = ?');
 								$cont->execute(array($qty_transfer,$id));
 								$controw = $cont->rowCount();
 								if($controw > 0){
-									echo "Succesfully return to Room 310 b";
+									echo "Succesfully return to room 310 b";
 								}
 							}
 						}

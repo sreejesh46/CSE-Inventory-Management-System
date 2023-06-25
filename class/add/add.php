@@ -25,7 +25,7 @@
 			if($row <= 0){
 				$sql = $conn->prepare("INSERT INTO room(rm_name, rm_status) VALUES(?, ?) ;
 									   INSERT INTO history_logs(description,table_name,user_id,user_type) VALUES(?,?,?,?)");
-				$sql->execute(array(' lab '.$name,1,$h_desc,$h_tbl,$sessionid,$sessiontype));
+				$sql->execute(array('lab'.$name,1,$h_desc,$h_tbl,$sessionid,$sessiontype));
 				$count = $sql->rowCount();
 				if($count > 0){
 					echo "1"; 
